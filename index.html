@@ -36,7 +36,12 @@
 
 
 <h2>Section I. Overall TTS Performance</h2>
-<p><em>mandarin text: &nbsp &nbsp对面要难<b>受^</b>喽，怕是赶快<b>投^</b>了吧. <br/>
+
+<h3>Section 1.1. Comparison EE-TTS with GT and Baseline</h3>
+<p> Emphasized speech samples of Baseline(with GT labels), EE-TTS(with GT labels), EE-TTS(with predict labels) and Ground Truth</p>
+
+
+<p><em>mandarin text: &nbsp &nbsp &nbsp对面要难<b>受^</b>喽，怕是赶快<b>投^</b>了吧. <br/>
 mandarin pinyin: dui4 mian4 yao4 nan2 <b>shou4^</b> lou5, pa4 shi4 gan3 kuai4 <b>tou2^</b> le5 ba5.</em></p>
 
 <table>
@@ -45,7 +50,7 @@ mandarin pinyin: dui4 mian4 yao4 nan2 <b>shou4^</b> lou5, pa4 shi4 gan3 kuai4 <b
 <th style="text-align: center">Baseline<br/>(GT emphasis labels)</th>
 <th style="text-align: center">EE-TTS<br/>(GT emphasis labels)</th>
 <th style="text-align: center">EE-TTS<br/>(Pred emphasis labels)</th>
-<th style="text-align: center">EE-TTS<br/>Ground Truth</th>
+<th style="text-align: center">Ground Truth</th>
 
 </tr>
 </thead>
@@ -59,33 +64,35 @@ mandarin pinyin: dui4 mian4 yao4 nan2 <b>shou4^</b> lou5, pa4 shi4 gan3 kuai4 <b
 </tr>
 </tbody>
 </table>
-<p><em>Maltby and Co. would issue warrants on them deliverable to the importer, and the goods were then passed to be stored in neighboring warehouses.</em></p>
+<p><em>mandarin text: &nbsp &nbsp &nbsp这场比赛<b>一^定^</b>很精彩，期待你的英勇表现哦! <br/>
+          mandarin pinyin: zhe4 chang3 bi3 sai4 <b>yi2^ ding4^</b> hen3 jing1 cai3, qi1 dai4 ni3 de5 ying1 yong3 biao3 xian4 o5!</em></p>
 <table>
 <thead>
-<tr>
-<th style="text-align: center">NaturalSpeech</th>
-<th style="text-align: center">Recording</th>
-</tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center"><audio controls="controls" ><source src="samples/10023proposed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="samples/10023proposed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="samples/10043ol.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="samples/10043proposed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="samples/10043proposedgt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="samples/10043gt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 </tr>
 </tbody>
 </table>
-<p><em>as effectually to rebuke and abash the profane spirit of the more insolent and daring of the criminals.</em></p>
+				<h3>Section 1.2. Generalization Test</h3>
+<p>Emphasized speech samples of EE-TTS and Baseline on another dataset F2</p>
+<p><em>mandarin text: &nbsp &nbsp你们的答案<b>好^</b>奇怪，为什么会有<b>这^</b>么长的答案？<br/>
+          mandarin pinyin: ni3 men5 de5 da2 an4 <b>hao3^</b> qi2 guai4, wei4 shen2 me5 hui4 you3 <b>zhe4^</b> me5 chang2 de5 da2 an4?</em></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: center">NaturalSpeech</th>
-<th style="text-align: center">Recording</th>
+<th style="text-align: center">EE-TTS</th>
+<th style="text-align: center">Baseline</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center"><audio controls="controls" ><source src="samples/10023proposed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="samples/10023proposed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="samples/f22base1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="samples/f22proposed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 </tr>
 </tbody>
 </table>
@@ -93,14 +100,14 @@ mandarin pinyin: dui4 mian4 yao4 nan2 <b>shou4^</b> lou5, pa4 shi4 gan3 kuai4 <b
 <table>
 <thead>
 <tr>
-<th style="text-align: center">NaturalSpeech</th>
-<th style="text-align: center">Recording</th>
+<th style="text-align: center">EE-TTS</th>
+<th style="text-align: center">Baseline</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center"><audio controls="controls" ><source src="samples/10023proposed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="samples/10023proposed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="samples/f22base2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="samples/f22ee2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 </tr>
 </tbody>
 </table>
