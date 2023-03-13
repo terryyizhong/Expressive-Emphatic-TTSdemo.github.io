@@ -24,36 +24,38 @@
 
 	</header>
 
-
 	<main role="main">
 		<article itemscope itemtype="https://schema.org/BlogPosting">
             <h1 class="entry-title" itemprop="headline">EE-TTS: Emphatic Expressive TTS with Linguistic Information</h1>
-
 			<section itemprop="entry-text">
-                <br>
-
-
 <h2 id="authors">Authors</h2>
-
-
 <h2 id="abstract">Abstract</h2>
 <p>While Current TTS systems perform well in synthesizing high-quality speech, producing highly expressive speech remains a challenge. Emphasis, as a critical factor in determining the expressiveness of speech, has attracted more attention nowadays. Previous works usually enhance the emphasis by adding intermediate features, but they can not guarantee the overall expressiveness of the speech. To resolve this matter, we propose Emphatic Expressive TTS (EE-TTS), which leverages multi-level linguistic information from syntax and semantics. EE-TTS contains an emphasis predictor that can identify appropriate emphasis positions from text and a conditioned acoustic model to synthesize expressive speech with emphasis and linguistic information. Experimental results indicate that EE-TTS outperforms baseline with MOS improvements of 0.49 and 0.67 in expressiveness and naturalness. EE-TTS also shows strong generalization across different datasets according to AB test results.</p>
 <h2>Audio Samples</h2>
 <h3><u>FYI: Bold characters with a "^" symbol in the texts means the position should be emphasized</u></h3>
 
 
-<p><em>The lax discipline maintained in Newgate was still further deteriorated by the presence of two other classes of prisoners who ought never to have been inmates of such a jail.</em></p>
+<h2>Section I. Overall TTS Performance</h2>
+<p><em>mandarin text: &nbsp &nbsp对面要难<b>受^</b>喽，怕是赶快<b>投^</b>了吧. <br/>
+mandarin pinyin: dui4 mian4 yao4 nan2 <b>shou4^</b> lou5, pa4 shi4 gan3 kuai4 <b>tou2^</b> le5 ba5.</em></p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align: center">NaturalSpeech</th>
-<th style="text-align: center">Recording</th>
+<th style="text-align: center">Baseline<br/>(GT emphasis labels)</th>
+<th style="text-align: center">EE-TTS<br/>(GT emphasis labels)</th>
+<th style="text-align: center">EE-TTS<br/>(Pred emphasis labels)</th>
+<th style="text-align: center">EE-TTS<br/>Ground Truth</th>
+
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center"><audio controls="controls" ><source src="samples/10023proposed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 <td style="text-align: center"><audio controls="controls" ><source src="samples/10023ol.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="samples/10023proposed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="samples/10023proposedgt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="samples/10023gt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+
 </tr>
 </tbody>
 </table>
